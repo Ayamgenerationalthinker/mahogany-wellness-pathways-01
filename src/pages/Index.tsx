@@ -186,7 +186,7 @@ const Index = () => {
                 </div>
                 
                 <p className="font-body text-base sm:text-lg text-foreground leading-relaxed">
-                  My name is Hakim Du Pree, a psychiatric and family nurse practitioner with over 20 years of nursing experience. I believe that healing should be whole, personal, and accessible. Thats why I started Mahogany's Health & Wellness to walk with you through lifes toughest moments with compassion and care.
+                  Hakim Du Pree, a psychiatric and family nurse practitioner with over 20 years of nursing experience. I believe that healing should be whole, personal, and accessible. Thats why I started Mahogany's Health & Wellness to walk with you through lifes toughest moments with compassion and care.
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
