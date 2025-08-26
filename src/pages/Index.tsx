@@ -72,7 +72,7 @@ const Index = () => {
               decoding="async"
             />
             <div className="min-w-0 flex-1">
-              <h1 className="font-display text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight drop-shadow-lg truncate">Mahoganys Health & Wellness</h1>
+              <h1 className="font-display text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight drop-shadow-lg truncate">Mahogany's Health & Wellness</h1>
               <p className="font-body text-sm sm:text-base text-white/90 drop-shadow-md hidden sm:block">Healing begins with connection</p>
             </div>
           </div>
@@ -156,7 +156,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-6 sm:mb-8">Mission</h2>
           <p className="font-body text-base sm:text-lg md:text-xl text-foreground max-w-4xl mx-auto leading-relaxed px-4">
-            Mahoganys Health and Wellness exists to uplift, heal, and empower turning personal pain into purpose and transforming care into community. Together, well walk the path toward healing one story, one heart, one life at a time.
+            Mahogany's Health and Wellness exists to uplift, heal, and empower turning personal pain into purpose and transforming care into community. Together, well walk the path toward healing one story, one heart, one life at a time.
           </p>
         </div>
       </section>
@@ -186,7 +186,7 @@ const Index = () => {
                 </div>
                 
                 <p className="font-body text-base sm:text-lg text-foreground leading-relaxed">
-                  "Im Hakim Du Pree, a psychiatric and family nurse practitioner with over 20 years of nursing experience. I believe that healing should be whole, personal, and accessible. Thats why I started Mahoganys Health & Wellness to walk with you through lifes toughest moments with compassion and care."
+                  "Im Hakim Du Pree, a psychiatric and family nurse practitioner with over 20 years of nursing experience. I believe that healing should be whole, personal, and accessible. Thats why I started Mahogany's Health & Wellness to walk with you through lifes toughest moments with compassion and care."
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
@@ -216,7 +216,7 @@ const Index = () => {
           
           <div className="text-center mb-8 sm:mb-12">
             <p className="font-body text-base sm:text-lg text-foreground max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-4">
-              Transforming Lives with Mahoganys Health & Wellness
+              Transforming Lives with Mahogany's Health & Wellness
             </p>
           </div>
 
@@ -445,7 +445,7 @@ const Index = () => {
             <p className="font-body text-base sm:text-lg text-foreground max-w-3xl mx-auto leading-relaxed mb-4 sm:mb-6">
               If you are struggling with any of these diagnoses or any other mental health issues, let's start working together to improve your mental outlook.
             </p>
-            <h3 className="font-display text-xl sm:text-2xl font-bold text-primary">Mahoganys Health & Wellness</h3>
+            <h3 className="font-display text-xl sm:text-2xl font-bold text-primary">Mahogany's Health & Wellness</h3>
           </div>
         </div>
       </section>
@@ -540,7 +540,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-secondary" />
-                  <span className="font-body text-foreground">Good internet & webcam</span>
+                  <span className="font-body text-foreground">Good internet connection</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-secondary" />
@@ -562,7 +562,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center">
             <div className="bg-card/50 border border-primary/20 rounded-xl p-6">
               <p className="font-body text-foreground leading-relaxed">
-                <span className="font-semibold">MAHOGANY'S HEALTH & WELLNESS</span> does not operate 24/7 and does not provide crisis services. Please seek immediate help if you are in distress by calling 988 or visiting your nearest emergency room.
+                <span className="font-semibold">MAHOGANY'S HEALTH & WELLNESS</span> does not operate 24/7. If you are experiencing a mental health crisis or emergency, please call 911 or go to your nearest emergency room. This telehealth service is not for emergencies.
               </p>
             </div>
           </div>
