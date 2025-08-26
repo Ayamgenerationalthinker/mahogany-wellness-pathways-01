@@ -200,27 +200,33 @@ Date of Birth: ${formData.dateOfBirth}`
                 <h3 className="font-display text-xl text-primary text-center mb-6">
                   Have you booked with us before?
                 </h3>
-                <RadioGroup 
-                  value={formData.hasBookedBefore} 
-                  onValueChange={(value) => handleInputChange('hasBookedBefore', value)}
-                  className="space-y-4"
-                >
-                  <div className="flex items-center space-x-3 p-4 border-2 border-border rounded-lg hover:border-primary/30 transition-colors">
-                    <RadioGroupItem value="no" id="no" />
-                    <Label htmlFor="no" className="font-body text-lg cursor-pointer flex-1">
-                      <div className="font-semibold">No - I'm a new client</div>
-                      <div className="text-sm text-muted-foreground">First time booking with us</div>
-                    </Label>
-                  </div>
+                <div className="space-y-4">
+                  <Button
+                    onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdIr7ODnIg5gm76c0wWWldBEAL9FB_zmr9zN3Bja_klyztw2A/viewform?usp=header', '_blank')}
+                    className="w-full justify-start text-left p-6 h-auto bg-primary hover:bg-primary/90"
+                  >
+                    <div className="flex items-center space-x-3">
+                      <div className="w-5 h-5 rounded-full bg-primary-foreground/20" />
+                      <div>
+                        <div className="font-semibold text-primary-foreground">No - I'm a new client</div>
+                        <div className="text-sm text-primary-foreground/80">First time booking with us</div>
+                      </div>
+                    </div>
+                  </Button>
                   
-                  <div className="flex items-center space-x-3 p-4 border-2 border-border rounded-lg hover:border-primary/30 transition-colors">
-                    <RadioGroupItem value="yes" id="yes" />
-                    <Label htmlFor="yes" className="font-body text-lg cursor-pointer flex-1">
-                      <div className="font-semibold">Yes - I'm a returning client</div>
-                      <div className="text-sm text-muted-foreground">I've booked with you before</div>
-                    </Label>
-                  </div>
-                </RadioGroup>
+                  <Button
+                    onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdpxRe_va3ZgmpqnAp5BVUDUjifc5waqeF9tm9PPZJvJf_ttQ/viewform', '_blank')}
+                    className="w-full justify-start text-left p-6 h-auto bg-accent hover:bg-accent/90"
+                  >
+                    <div className="flex items-center space-x-3">
+                      <div className="w-5 h-5 rounded-full bg-accent-foreground/20" />
+                      <div>
+                        <div className="font-semibold text-accent-foreground">Yes - I'm a returning client</div>
+                        <div className="text-sm text-accent-foreground/80">I've booked with you before</div>
+                      </div>
+                    </div>
+                  </Button>
+                </div>
               </div>
             )}
 
