@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { OptimizedImage } from "@/components/OptimizedImage";
+import { LazySection } from "@/components/LazySection";
+import { Helmet } from 'react-helmet-async';
 
 import { 
   Mail, 
@@ -57,19 +60,31 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background scroll-smooth">
+    <>
+      <Helmet>
+        <title>Mahogany's Health & Wellness - Telehealth Mental Health Care in Florida</title>
+        <meta name="description" content="Compassionate psychiatric and wellness care via secure telehealth across Florida. Led by Hakim Du Pree, MSN, PMHNP-C with 20 years experience." />
+        <meta name="keywords" content="telehealth mental health Florida, psychiatric nurse practitioner, therapy online, depression treatment, anxiety therapy" />
+        <link rel="canonical" href="https://mahoganyhealthwellness.com/" />
+        <meta property="og:title" content="Mahogany's Health & Wellness - Telehealth Mental Health Care in Florida" />
+        <meta property="og:description" content="Compassionate psychiatric and wellness care via secure telehealth across Florida." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mahoganyhealthwellness.com/" />
+      </Helmet>
+      <div className="min-h-screen bg-background scroll-smooth">
       {/* Navigation */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav ${
         isScrolled ? 'shadow-elegant' : ''
       }`} style={{ backgroundColor: '#5C4033' }}>
         <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2 sm:space-x-4">
-            <img 
+            <OptimizedImage 
               src="/lovable-uploads/033b9631-2244-47e9-85e8-3b8e5684eadc.png" 
-              alt="Mahogany's Health & Wellness" 
+              alt="Mahogany's Health & Wellness Logo" 
               className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover border-3 border-primary shadow-xl hover:scale-105 transition-transform duration-300 ring-4 ring-primary/20"
               loading="eager"
               decoding="async"
+              priority
             />
             <div className="min-w-0 flex-1">
               <h1 className="font-display text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight drop-shadow-lg truncate">Mahogany's Health & Wellness</h1>
@@ -170,9 +185,9 @@ const Index = () => {
             <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               <div className="relative order-2 lg:order-1">
                 <div className="absolute inset-0 glass-card rounded-3xl transform rotate-3 hover-3d"></div>
-                <img 
+                <OptimizedImage 
                   src="/lovable-uploads/9c7be8ee-1e8a-47a8-ba8d-c5387a5e2e4e.png"
-                  alt="Hakim Du Pree, MSN, PMHNP-C, APRN, FNP-C"
+                  alt="Hakim Du Pree, MSN, PMHNP-C, APRN, FNP-C - Psychiatric and Family Nurse Practitioner"
                   className="relative z-10 w-full rounded-3xl shadow-warm hover-3d"
                   loading="lazy"
                   decoding="async"
@@ -210,9 +225,10 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-12 sm:py-16 md:py-20 bg-gradient-section">
-        <div className="container mx-auto px-4">
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary text-center mb-12 sm:mb-16">Services</h2>
+      <LazySection>
+        <section id="services" className="py-12 sm:py-16 md:py-20 bg-gradient-section">
+          <div className="container mx-auto px-4">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary text-center mb-12 sm:mb-16">Services</h2>
           
           <div className="text-center mb-8 sm:mb-12">
             <p className="font-body text-base sm:text-lg text-foreground max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-4">
@@ -449,6 +465,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      </LazySection>
 
       {/* Pricing Section */}
       <section className="py-12 sm:py-16 md:py-20 bg-background">
@@ -758,6 +775,7 @@ const Index = () => {
       </footer>
 
     </div>
+    </>
   );
 };
 

@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Critical CSS for above-the-fold content */
+.glass-nav {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(92, 64, 51, 0.95);
+  will-change: transform;
+}
+
+.hero-text {
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+/* Performance optimizations */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  content-visibility: auto;
+  contain: layout style paint;
+}
+
+/* Responsive touch targets */
+@media (max-width: 768px) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
 /* Mahogany's Health & Wellness Design System
 Warm, professional, calming, empowering healthcare theme
 All colors MUST be HSL.
