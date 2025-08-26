@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mahogany's Health & Wellness Design System
+Warm, professional, calming, empowering healthcare theme
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Logo-Inspired Color Palette - Consistent Tan/Brown Theme */
+    --logo-tan: 35 40% 70%;           /* Tan background throughout */
+    --logo-green: 150 45% 55%;        /* Green accent */
+    --logo-blue: 210 60% 50%;         /* Blue accent */
+    --logo-brown: 25 35% 25%;         /* Dark brown for highlights */
+    --warm-cream: 0 0% 100%;          /* Pure white */
+    --highlight-brown: 25 35% 25%;    /* Dark brown for highlighting */
+    
+    /* Consistent Tan Background Throughout - Dark Brown Highlights */
+    --background: 35 40% 70%;         /* Tan background throughout */
+    --foreground: 25 35% 25%;         /* Dark brown text */
+
+    --card: 35 40% 70%;               /* Tan for cards */
+    --card-foreground: 25 35% 25%;    /* Dark brown text on cards */
+
+    --popover: 35 40% 70%;            /* Tan popover */
+    --popover-foreground: 25 35% 25%; /* Dark brown text on popover */
+
+    --primary: 0 0% 100%;             /* White buttons */
+    --primary-foreground: 25 35% 25%; /* Dark brown text on white buttons */
+
+    --secondary: 35 40% 70%;          /* Tan secondary */
+    --secondary-foreground: 25 35% 25%; /* Dark brown text on secondary */
+
+    --muted: 35 40% 70%;              /* Tan muted */
+    --muted-foreground: 25 35% 40%;   /* Medium brown for muted text */
+
+    --accent: 0 0% 100%;              /* White accent for buttons */
+    --accent-foreground: 25 35% 25%;  /* Dark brown text on white accent */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 35 40% 95%;
+
+    --border: 25 35% 40%;             /* Dark brown border */
+    --input: 35 40% 70%;              /* Tan input background */
+    --ring: 25 35% 25%;               /* Dark brown ring for highlights */
+
+    --radius: 1rem;
+    
+    /* Tan background gradients throughout */
+    --gradient-hero: linear-gradient(135deg, hsl(35 40% 70% / 0.95) 0%, hsl(35 40% 70%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--logo-tan)));
+    --gradient-warm: linear-gradient(135deg, hsl(35 40% 70%) 0%, hsl(35 40% 70%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(35 40% 70%) 0%, hsl(35 40% 70%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(35 40% 70%) 0%, hsl(35 40% 70%) 100%);
+    
+    /* Enhanced shadows with dark brown theme */
+    --shadow-soft: 0 4px 25px -4px hsl(25 35% 25% / 0.3);
+    --shadow-warm: 0 8px 40px -8px hsl(25 35% 25% / 0.2);
+    --shadow-elegant: 0 12px 60px -12px hsl(25 35% 25% / 0.25);
+    
+    /* Typography */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Open Sans', sans-serif;
+    
+    /* Logo colors for direct use */
+    --mahogany: 25 35% 20%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Glass Morphism Effects */
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-xl;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+  
+  .glass-container {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10 shadow-lg;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  /* 3D Hover Effects */
+  .hover-3d {
+    @apply transition-all duration-300 ease-out;
+    transform-style: preserve-3d;
+  }
+  
+  .hover-3d:hover {
+    @apply shadow-2xl;
+    transform: translateY(-8px) rotateX(5deg) rotateY(5deg) scale(1.02);
+    box-shadow: 
+      0 20px 40px -12px rgba(0, 0, 0, 0.25),
+      0 0 0 1px rgba(255, 255, 255, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  }
+  
+  .hover-3d-subtle {
+    @apply transition-all duration-200 ease-out;
+    transform-style: preserve-3d;
+  }
+  
+  .hover-3d-subtle:hover {
+    @apply shadow-lg;
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 
+      0 10px 25px -5px rgba(0, 0, 0, 0.15),
+      0 0 0 1px rgba(255, 255, 255, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Glass Navigation */
+  .glass-nav {
+    @apply bg-background/80 border-b border-white/10;
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Glass Buttons */
+  .glass-button {
+    @apply bg-white/10 border border-white/20 hover:bg-white/20 transition-all duration-200;
+  }
+  
+  .glass-button:hover {
+    box-shadow: 
+      0 8px 25px rgba(0, 0, 0, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+}
