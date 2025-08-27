@@ -454,6 +454,48 @@ const Index = () => {
                   </div>
                 </AccordionContent>
               </AccordionItem>
+
+              {/* Intimacy Coaching */}
+              <AccordionItem value="intimacy" className="glass-card rounded-lg border-0">
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                      <Heart className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <h3 className="font-display text-xl font-bold text-primary">Intimacy Coaching</h3>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <div className="bg-accent/10 p-6 rounded-lg">
+                    <p className="font-body text-sm text-foreground leading-relaxed">
+                      Intimacy coaching provides structured support to help individuals and couples enhance communication, emotional connection, and relational satisfaction. Sessions focus on addressing barriers to closeness—such as stress, past trauma, or self-esteem—while teaching practical strategies to strengthen trust, rebuild passion, and create safe, respectful relationships.
+                    </p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              {/* Sex Therapy */}
+              <AccordionItem value="sex-therapy" className="glass-card rounded-lg border-0">
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                      <Sparkles className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <h3 className="font-display text-xl font-bold text-primary">Sex Therapy</h3>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <div className="bg-accent/10 p-6 rounded-lg">
+                    <p className="font-body text-sm text-foreground leading-relaxed">
+                      Sex therapy is a specialized form of counseling that addresses challenges with sexual function, intimacy, and relationship satisfaction. Therapy may focus on concerns such as desire differences, performance anxiety, communication difficulties, or the impact of stress, trauma, or medical conditions on sexual health. As a sex therapist, I provide education, guidance, and supportive strategies to help individuals and couples achieve greater intimacy and satisfaction.
+                    </p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
             </Accordion>
           </div>
 
