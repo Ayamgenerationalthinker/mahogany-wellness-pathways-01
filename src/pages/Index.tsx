@@ -171,7 +171,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-6 sm:mb-8">Mission</h2>
           <p className="font-body text-base sm:text-lg md:text-xl text-foreground max-w-4xl mx-auto leading-relaxed px-4">
-            Mahogany's Health and Wellness exists to uplift, heal, and empower turning personal pain into purpose and transforming care into community. Together, well walk the path toward healing one story, one heart, one life at a time.
+            Mahogany's Health and Wellness exists to uplift, heal, and empower turning personal pain into purpose and transforming care into community. Together, we will walk the path toward healing one story, one heart, one life at a time.
           </p>
         </div>
       </section>
@@ -201,7 +201,7 @@ const Index = () => {
                 </div>
                 
                 <p className="font-body text-base sm:text-lg text-foreground leading-relaxed">
-                  Hakim Du Pree, a psychiatric and family nurse practitioner with over 20 years of nursing experience. I believe that healing should be whole, personal, and accessible. Thats why I started Mahogany's Health & Wellness to walk with you through lifes toughest moments with compassion and care.
+                  Hakim Du Pree, a psychiatric and family nurse practitioner with over 20 years of nursing experience. I believe that healing should be whole, personal, and accessible. That's why I started Mahogany's Health & Wellness to walk with you through life's toughest moments with compassion and care.
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
@@ -449,7 +449,7 @@ const Index = () => {
                     </div>
                     <div className="bg-accent/10 p-4 rounded-lg">
                       <h4 className="font-body font-semibold text-accent mb-2">When to Reach Out</h4>
-                      <p className="font-body text-sm text-foreground">If changes in memory, thinking, or behavior affect independence, early intervention and family support are key.</p>
+                      <p className="font-body text-sm text-foreground">If changes in memory, thinking, or behavior effect independence, early intervention and family support are key.</p>
                     </div>
                   </div>
                 </AccordionContent>
@@ -607,7 +607,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-secondary" />
-                  <span className="font-body text-foreground">An open heart this is a safe space</span>
+                  <span className="font-body text-foreground">An open heart,   this is a safe space</span>
                 </div>
               </div>
             </CardContent>
@@ -650,7 +650,7 @@ const Index = () => {
                   <Heart className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground" />
                 </div>
                 <h3 className="font-display text-lg sm:text-xl font-bold text-primary mb-3 sm:mb-4 text-center">Do you provide therapy and medication management?</h3>
-                <p className="font-body text-foreground text-center">Yes, both are available no need for multiple providers unless we choose to collaborate for extra support.</p>
+                <p className="font-body text-foreground text-center">Yes both are available. There is no need for multiple providers unless we choose to collaborate for extra support.</p>
               </CardContent>
             </Card>
 
